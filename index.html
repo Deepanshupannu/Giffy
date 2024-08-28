@@ -2,21 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Giffy</title>
+  <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+  <div class="buttons">
+
+    <input type="text" id="search" placeholder="search here" value="Cat">
+    <button>New giphy</button>
+  </div>
   <img src="#">
  
-  <script>
-    const img = document.querySelector('img');
-    fetch('https://api.giphy.com/v1/gifs/translate?api_key=WHQbXetrA41lL1UxriYxa5wlZjcCXFdk&s=cats', {mode: 'cors'})
-      .then(function(response) {
-        return response.json();
-      })
-      .then(function(response) {
-        img.src = response.data.images.original.url;
-      });
-  </script>
-  
+  <script src="main.js"></script>
 </body>
 </html>
